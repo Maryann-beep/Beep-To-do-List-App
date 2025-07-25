@@ -1,5 +1,3 @@
-
-
 # STYLE GUIDE
 ## Colors
 - hsl(235, 21%, 11%)
