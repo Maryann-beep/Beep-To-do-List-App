@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive To-Do List</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div class="body">
+      <img src="assets/bg-desktop-dark.jpg" alt="Background" class="hero_img"/>
+
+    <div class="list_container">
+      <div class="texticon">
+        <h1>To-Do List</h1>
+        <img src="assets/icon-sun.svg" alt="Toggle theme" class="icon-sun" />
+      </div>
+
+      <form id="todo-form">
+        <button type="submit" id="submit-btn" aria-label="Add new task">+</button>
+        <input type="text" id="input_field" placeholder="Create a new to-do..." required />
+      </form>
+
+      <ul id="list"></ul>
+
+      <div class="list_nav">
+        <span id="items-left">0 items left</span>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <button class="clear-completed-btn">Clear Completed</button>
+      </div>
+
+      <p class="small-text">Drag and drop to reorder</p>
+    </div>
+  </div>
+
+  <script src="script.js"> </script>
+  
+</body>
+</html>
